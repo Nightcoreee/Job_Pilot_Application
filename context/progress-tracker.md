@@ -6,9 +6,9 @@ Update this file after every completed feature. Any AI agent reading this should
 
 ## Current Status
 
-**Phase:**
-**Last completed:**
-**Next:**
+**Phase:** Phase 1 - Foundation
+**Last completed:** 01 Homepage
+**Next:** 02 Auth
 
 ---
 
@@ -16,7 +16,7 @@ Update this file after every completed feature. Any AI agent reading this should
 
 ### Phase 1 — Foundation
 
-- [ ] 01 Homepage
+- [x] 01 Homepage
 - [ ] 02 Auth
 - [ ] 03 PostHog Initialization
 - [ ] 04 Database Schema
@@ -50,10 +50,13 @@ Update this file after every completed feature. Any AI agent reading this should
 
 ## Decisions Made During Build
 
-_Add decisions here as they are made during implementation._
+- 2026-09-15: Built the homepage as static Server Components using `context/designs/landing-page.png` as the source of truth. CTA links point to `/login` and `/find-jobs` until auth redirects are implemented.
+- 2026-09-15: Switched the root layout font from Geist to Inter to match `ui-rules.md` and `ui-tokens.md`.
 
 ---
 
 ## Notes
+
+- Homepage uses public assets: `logo.png`, `images/dashboard-demo.png`, `images/jobs-lists.png`, `images/agnet-log.png`, and `images/user-icon.png`.
 
 _Add notes here as the build progresses — workarounds, patterns, anything that differs from the context files._
